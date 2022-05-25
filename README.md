@@ -1,2 +1,2 @@
 # TinyTendo
-An open-source portable handheld NES using real hardware
+An open-source handheld NES using real hardware
