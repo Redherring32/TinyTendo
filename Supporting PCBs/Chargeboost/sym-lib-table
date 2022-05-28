@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name TPS61235PRWLT)(type Legacy)(uri K:/Users/Redherring32/Desktop/TinyTendo/ChargeBoost/TPS61235PRWLT.lib)(options "")(descr ""))
+  (lib (name MCP73871-2AAI_ML)(type Legacy)(uri K:/Users/Redherring32/Desktop/TinyTendo/ChargeBoost/MCP73871-2AAI_ML.lib)(options "")(descr ""))
+  (lib (name USB4125-GF-A_REVA2)(type Legacy)(uri K:/Users/Redherring32/Desktop/TinyTendo/ChargeBoost/USB4125-GF-A_REVA2.lib)(options "")(descr ""))
+  (lib (name ChargeBoost)(type Legacy)(uri ${KIPRJMOD}/ChargeBoost.lib)(options "")(descr ""))
+)

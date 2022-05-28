@@ -1,0 +1,30 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model PCM12SMTR
+#/13139731/161612/2.49/7/4/Switch
+DEF PCM12SMTR S 0 30 Y Y 1 F N
+F0 "S" 850 300 50 H V L CNN
+F1 "PCM12SMTR" 850 200 50 H V L CNN
+F2 "PCM12SMTR" 850 100 50 H I L CNN
+F3 "http://uk.rs-online.com/web/p/products/7931721P" 850 0 50 H I L CNN
+F4 "Slide Switches 0.3A SPDT ON-ON" 850 -100 50 H I L CNN "Description"
+F5 "1.4" 850 -200 50 H I L CNN "Height"
+F6 "C & K COMPONENTS" 850 -300 50 H I L CNN "Manufacturer_Name"
+F7 "PCM12SMTR" 850 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "611-PCM12SMTR" 850 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/CK/PCM12SMTR?qs=mfFuHy8STfL3qrPSfCHA7w%3D%3D" 850 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "PCM12SMTR" 850 -700 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/pcm12smtr/ck?region=nac" 850 -800 50 H I L CNN "Arrow Price/Stock"
+DRAW
+X NC 1 0 0 200 R 50 50 0 0 N
+X COM 2 0 -100 200 R 50 50 0 0 P
+X NO 3 0 -200 200 R 50 50 0 0 P
+X MP1 MP1 0 -300 200 R 50 50 0 0 P
+X MP2 MP2 1000 0 200 L 50 50 0 0 P
+X MP3 MP3 1000 -100 200 L 50 50 0 0 P
+X MP4 MP4 1000 -200 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 800 100 800 -400 200 -400 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

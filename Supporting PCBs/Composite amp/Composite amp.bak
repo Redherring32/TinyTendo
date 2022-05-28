@@ -1,0 +1,304 @@
+EESchema Schematic File Version 4
+LIBS:Composite amp-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 4200 3150 0    50   ~ 0
+Composite Amp
+Wire Wire Line
+	7650 3700 7800 3700
+$Comp
+L Device:C C5
+U 1 1 60214EBB
+P 5850 3650
+F 0 "C5" H 5965 3696 50  0000 L CNN
+F 1 "22uF" H 5965 3605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5888 3500 50  0001 C CNN
+F 3 "~" H 5850 3650 50  0001 C CNN
+	1    5850 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 6021CE25
+P 7650 3500
+F 0 "C6" V 7398 3500 50  0000 C CNN
+F 1 "22uF" V 7489 3500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7688 3350 50  0001 C CNN
+F 3 "~" H 7650 3500 50  0001 C CNN
+	1    7650 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R2
+U 1 1 6021FB84
+P 7300 3500
+F 0 "R2" V 7095 3500 50  0000 C CNN
+F 1 "110R" V 7186 3500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 7300 3500 50  0001 C CNN
+F 3 "~" H 7300 3500 50  0001 C CNN
+	1    7300 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7400 3500 7500 3500
+Wire Wire Line
+	6300 3500 7200 3500
+Wire Wire Line
+	6300 3500 6300 3250
+Connection ~ 6300 3500
+$Comp
+L Device:R_Small_US R1
+U 1 1 60224C90
+P 6300 3150
+F 0 "R1" H 6368 3196 50  0000 L CNN
+F 1 "300R" H 6368 3105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 6300 3150 50  0001 C CNN
+F 3 "~" H 6300 3150 50  0001 C CNN
+	1    6300 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3050 6300 3000
+Wire Wire Line
+	5400 3500 5850 3500
+Text Label 6300 2800 3    50   ~ 0
+5V
+$Comp
+L Transistor_BJT:2N3906 Q1
+U 1 1 6022F5A4
+P 6200 3700
+F 0 "Q1" H 6390 3654 50  0000 L CNN
+F 1 "MMBT3906" H 6390 3745 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6400 3625 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 6200 3700 50  0001 L CNN
+	1    6200 3700
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3500 3900 4150 3900
+Text Notes 1900 3800 0    50   ~ 0
+Power Filter
+$Comp
+L Device:C C3
+U 1 1 5E6EF865
+P 3500 4150
+F 0 "C3" H 3615 4196 50  0000 L CNN
+F 1 "10uF" H 3615 4105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3538 4000 50  0001 C CNN
+F 3 "~" H 3500 4150 50  0001 C CNN
+	1    3500 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:INDUCTOR L1
+U 1 1 5E6E091B
+P 2450 3900
+F 0 "L1" H 2450 4115 50  0000 C CNN
+F 1 "Ferrite Bead" H 2450 4024 50  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric" H 2450 3900 50  0001 C CNN
+F 3 "~" H 2450 3900 50  0001 C CNN
+	1    2450 3900
+	1    0    0    -1  
+$EndComp
+Connection ~ 3500 4400
+Connection ~ 3500 3900
+Connection ~ 2900 4400
+Wire Wire Line
+	3500 4400 3500 4300
+Wire Wire Line
+	2900 4400 3500 4400
+Connection ~ 2900 3900
+Wire Wire Line
+	3500 3900 2900 3900
+Wire Wire Line
+	3500 4000 3500 3900
+Wire Wire Line
+	1800 4400 2900 4400
+Wire Wire Line
+	2900 4400 2900 4300
+Wire Wire Line
+	2900 3900 2900 4000
+Wire Wire Line
+	2700 3900 2900 3900
+Wire Wire Line
+	1800 3900 2200 3900
+Wire Wire Line
+	1800 4000 1800 3900
+Connection ~ 1800 4400
+Wire Wire Line
+	1800 4300 1800 4400
+$Comp
+L Device:C C2
+U 1 1 5E6E0F39
+P 2900 4150
+F 0 "C2" H 3015 4196 50  0000 L CNN
+F 1 "100nF" H 3015 4105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2938 4000 50  0001 C CNN
+F 3 "~" H 2900 4150 50  0001 C CNN
+	1    2900 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 4400 1800 4400
+Wire Wire Line
+	1450 4200 1450 4400
+Connection ~ 5850 4400
+Connection ~ 5400 4400
+Wire Wire Line
+	5400 4400 5850 4400
+Wire Wire Line
+	5850 3800 5850 4400
+Wire Wire Line
+	5850 4400 6300 4400
+Wire Wire Line
+	5400 4400 5400 4550
+Text Label 5400 4550 1    50   ~ 0
+GND
+$Comp
+L Device:CP1 C4
+U 1 1 5E704A51
+P 5400 4250
+F 0 "C4" H 5518 4296 50  0000 L CNN
+F 1 "100uF" H 5518 4205 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_4x3.9" H 5438 4100 50  0001 C CNN
+F 3 "~" H 5400 4250 50  0001 C CNN
+	1    5400 4250
+	1    0    0    -1  
+$EndComp
+Connection ~ 1800 3900
+Wire Wire Line
+	1450 4100 1450 3900
+Wire Wire Line
+	1450 3900 1800 3900
+$Comp
+L Device:C C1
+U 1 1 5E6DE3B7
+P 1800 4150
+F 0 "C1" H 1915 4196 50  0000 L CNN
+F 1 "10nF" H 1915 4105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1838 4000 50  0001 C CNN
+F 3 "~" H 1800 4150 50  0001 C CNN
+	1    1800 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3500 5400 4100
+Connection ~ 5850 3500
+Wire Wire Line
+	5850 3500 6300 3500
+Wire Wire Line
+	6300 3900 6300 4400
+Wire Wire Line
+	4550 3700 6000 3700
+Wire Wire Line
+	4150 3900 4150 3000
+Wire Wire Line
+	4150 3000 6300 3000
+Connection ~ 6300 3000
+Wire Wire Line
+	6300 3000 6300 2800
+Text Label 4550 3700 0    50   ~ 0
+VIDEO-IN
+Wire Wire Line
+	1450 4100 1200 4100
+Wire Wire Line
+	1450 4200 1200 4200
+Text Label 1200 4100 0    50   ~ 0
+5V-IN
+Text Label 1200 4200 0    50   ~ 0
+GND
+$Comp
+L Connector:TestPoint TP1
+U 1 1 61444261
+P 1200 4100
+F 0 "TP1" V 1395 4172 50  0000 C CNN
+F 1 "TestPoint" V 1304 4172 50  0000 C CNN
+F 2 "TinyTendo:SolderPad" H 1400 4100 50  0001 C CNN
+F 3 "~" H 1400 4100 50  0001 C CNN
+	1    1200 4100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 6144479E
+P 1200 4200
+F 0 "TP2" V 1395 4272 50  0000 C CNN
+F 1 "TestPoint" V 1304 4272 50  0000 C CNN
+F 2 "TinyTendo:SolderPad" H 1400 4200 50  0001 C CNN
+F 3 "~" H 1400 4200 50  0001 C CNN
+	1    1200 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 61444DBD
+P 4550 3700
+F 0 "TP3" V 4745 3772 50  0000 C CNN
+F 1 "TestPoint" V 4654 3772 50  0000 C CNN
+F 2 "TinyTendo:SolderPad" H 4750 3700 50  0001 C CNN
+F 3 "~" H 4750 3700 50  0001 C CNN
+	1    4550 3700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6300 4400 7650 4400
+Wire Wire Line
+	7650 4400 7650 3700
+Connection ~ 6300 4400
+$Comp
+L Connector:Conn_01x14_Female J1
+U 1 1 614475F0
+P 7750 2000
+F 0 "J1" V 7915 1930 50  0000 C CNN
+F 1 "Conn_01x14_Female" V 7824 1930 50  0000 C CNN
+F 2 "Connector_JST:JST_GH_SM14B-GHS-TB_1x14-1MP_P1.25mm_Horizontal" H 7750 2000 50  0001 C CNN
+F 3 "~" H 7750 2000 50  0001 C CNN
+	1    7750 2000
+	0    -1   -1   0   
+$EndComp
+Text Label 8450 2650 1    50   ~ 0
+5V
+Wire Wire Line
+	3500 4400 5400 4400
+Wire Wire Line
+	8250 3500 7800 3500
+Wire Wire Line
+	8250 2650 8250 2200
+Wire Wire Line
+	8350 2650 8350 2200
+Wire Wire Line
+	8450 2650 8450 2200
+Text Label 8250 3500 2    50   ~ 0
+VIDEO-OUT
+Text Label 8250 2650 1    50   ~ 0
+GND
+Text Label 8350 2650 1    50   ~ 0
+GND
+Wire Wire Line
+	8150 2650 8150 2200
+Text Label 8150 2650 1    50   ~ 0
+VIDEO-OUT
+$Comp
+L Connector:TestPoint TP?
+U 1 1 6142B86A
+P 1200 4200
+F 0 "TP?" V 1395 4272 50  0000 C CNN
+F 1 "TestPoint" V 1304 4272 50  0000 C CNN
+F 2 "TinyTendo:SolderPad" H 1400 4200 50  0001 C CNN
+F 3 "~" H 1400 4200 50  0001 C CNN
+	1    1200 4200
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC

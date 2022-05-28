@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name LM4865M)(type Legacy)(uri ${KIPRJMOD}/LM4865M.lib)(options "")(descr ""))
+  (lib (name MJ-3523-SMT)(type Legacy)(uri ${KIPRJMOD}/MJ-3523-SMT.lib)(options "")(descr ""))
+)

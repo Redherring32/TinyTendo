@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name TinyTendo)(type KiCad)(uri K:/Users/Redherring32/Desktop/TinyTendo/TinyTendo.pretty)(options "")(descr ""))
+  (lib (name SamacSys_Parts)(type KiCad)(uri K:/Users/Redherring32/Desktop/TinyTendo/SamacSys_Parts.pretty)(options "")(descr ""))
+)

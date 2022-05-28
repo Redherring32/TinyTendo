@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name TinyTendo)(type KiCad)(uri ${KIPRJMOD}/TinyTendo.pretty)(options "")(descr ""))
+  (lib (name SamacSys_Parts)(type KiCad)(uri ${KIPRJMOD}/SamacSys_Parts.pretty)(options "")(descr ""))
+  (lib (name Toploader)(type KiCad)(uri "K:/Users/Redherring32/Desktop/OpenTendo-TopLoader.git/trunk/Component Footprints/Toploader.pretty")(options "")(descr ""))
+)

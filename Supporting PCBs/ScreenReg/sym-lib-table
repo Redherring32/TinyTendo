@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name ScreenReg)(type Legacy)(uri ${KIPRJMOD}/ScreenReg.lib)(options "")(descr ""))
+)
