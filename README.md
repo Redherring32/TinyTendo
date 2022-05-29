@@ -60,7 +60,7 @@ the TAPR Open Hardware License (www.tapr.org/OHL)
 
 All hardware contained within this repository was designed by me except the Brightness mod PCB.
 The brightness mod PCB was designed by YveltalGriffin, and has been licensed under TAPR OHL with permission from the author.
-
+The brightness PCB was designed using Eagle, all other hardware was designed using KiCAD.
 ## Credits
 
 In no particular order:
@@ -73,7 +73,7 @@ In no particular order:
 
 *BucketMouse* -Designing cartridge PCBs for TinyTendo, and help with diagnosis work.
 
-*MuraMasa* -Help with diagnosis work, 
+*MuraMasa* -Help with diagnosis work, sharing KiCAD footprints for early protos cause I kept messing mine up. :)
 
 And to all of the awesome people in NESDev, you guys rock.
 
