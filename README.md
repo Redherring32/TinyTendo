@@ -1,5 +1,5 @@
 # Tiny 'Tendo
-An open-source Ganeboy sized handheld NES using real hardware
+An open-source Gameboy sized handheld NES using real hardware
 
 ## DISCLAIMER:
 
