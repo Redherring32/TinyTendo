@@ -7,8 +7,6 @@ TinyTendo requires physically cutting and grinding ORIGINAL NES chips down small
 
 You could KILL the chips if this is not done correctly, do this at your own risk, I am not responsible for damage to any hardware resulting from attempting to build this project.
 
-The cutting and grinding process can take up to 5hrs per chip, take your time, and don't get impatient.
-
 ## Repository Structure:
 
 * Hardware: Contains all files relating to the hardware design for the various PCBs used for this project
