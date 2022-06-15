@@ -1,5 +1,5 @@
 # Tiny 'Tendo
-An open-source handheld NES using real hardware
+An open-source Ganeboy sized handheld NES using real hardware
 
 ## DISCLAIMER:
 
@@ -11,25 +11,11 @@ The cutting and grinding process can take up to 5hrs per chip, take your time, a
 
 ## Repository Structure:
 
-* Motherboard: Contains all files relating to the main motherboard
+* Hardware: Contains all files relating to the hardware design for the various PCBs used for this project
 
-* Supporting PCBs: Contains folders for all non-motherboard PCBs
-
+* Software: Contains the software required for the brightness mod PCB
 
 The files required to order PCBs can be found under releases.
-
-## Recommended Motherboard PCB specs:
-
-Motherboard only, see respective folder for supporting PCB specs.
-* 4 layers
-
-* 64.7 mmx52.2 mm
-
-* 1.6mm thickness
-
-* HASL surface finish
-
-* Stencil is recommended, but not necessary.
 
 ![TinyTendo Internals](https://i.imgur.com/28VYGCG.jpg)
 	
@@ -48,6 +34,8 @@ Clones also cannot be used without some redesign of the motherboard, as they can
 * Write chip trimming guide to go over workflow and best practices
 
 * Do write up explaining significance, benefits, and shortcomings of undervolting
+
+* Write readmes for supporting PCBs
 
 * Figure out what I am forgetting to add to TO-DO
 
