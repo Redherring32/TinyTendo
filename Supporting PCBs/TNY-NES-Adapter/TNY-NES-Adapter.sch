@@ -262,7 +262,6 @@ NoConn ~ 6400 3650
 NoConn ~ 6400 3750
 NoConn ~ 6400 3850
 NoConn ~ 6400 3950
-NoConn ~ 6400 4050
 NoConn ~ 7700 3750
 NoConn ~ 7700 3850
 NoConn ~ 7700 3950
@@ -517,7 +516,6 @@ NoConn ~ 2700 3600
 NoConn ~ 2700 3700
 NoConn ~ 2700 3800
 NoConn ~ 2700 3900
-NoConn ~ 2700 4000
 NoConn ~ 4000 3700
 NoConn ~ 4000 3800
 NoConn ~ 4000 3900
@@ -525,4 +523,12 @@ NoConn ~ 4000 4000
 NoConn ~ 4000 4100
 NoConn ~ 4000 5500
 NoConn ~ 7700 5550
+Text Label 5800 4050 0    50   ~ 0
+EXP-0
+Wire Wire Line
+	6400 4050 5800 4050
+Text Label 2100 4000 0    50   ~ 0
+EXP-0
+Wire Wire Line
+	2700 4000 2100 4000
 $EndSCHEMATC

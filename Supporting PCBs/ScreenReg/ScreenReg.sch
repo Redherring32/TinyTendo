@@ -250,17 +250,6 @@ F 3 "~" H 3250 4150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:TestPoint TP2
-U 1 1 621BF5E6
-P 4000 4950
-F 0 "TP2" H 3942 4976 50  0000 R CNN
-F 1 "TestPoint" H 3942 5067 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 4200 4950 50  0001 C CNN
-F 3 "~" H 4200 4950 50  0001 C CNN
-	1    4000 4950
-	-1   0    0    1   
-$EndComp
-$Comp
 L Connector:TestPoint TP3
 U 1 1 621C082D
 P 4550 4150

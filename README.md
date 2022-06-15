@@ -13,6 +13,8 @@ You could KILL the chips if this is not done correctly, do this at your own risk
 
 * Software: Contains the software required for the brightness mod PCB
 
+* 3D-CAD: Contains design files for the housing design
+
 The files required to order PCBs can be found under releases.
 
 ![TinyTendo Internals](https://i.imgur.com/28VYGCG.jpg)
