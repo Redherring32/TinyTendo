@@ -22,7 +22,7 @@ This project is a derivitive of OpenTendo, and OpenTendo-Toploader, and is licen
 Since this project is open-source you may do as you like with it, whether that is to make TinyTendo for personal use, sell PCBs or assembled handhelds, or to use the provided info for further custom PCB work/designs.
 
 
-*Note:* If you wish to run TinyTendo at 3.3V, G rev (RP2A03G/RP2C02G) chips are required. Other revisions (A, B, D, E, H etc) will crash if run at 3.3V.
+*Note:* If you wish to run TinyTendo at 3.3V, G rev (RP2A03G/RP2C02G) chips are required. Other revisions (A, B, D, E, H etc) may crash if run at 3.3V.
 This is not a problem if you wish to run the hardware at 5V, however battery life will be somewhat decreased if operating at 5V.
 Clones also cannot be used without some redesign of the motherboard, as they cannot be trimmed down as small.
 
