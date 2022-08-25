@@ -36,7 +36,7 @@ And finally, I am NOT an EE, if you are at all disgusted by any aspect of the PC
 
 * Update readme image to reflect current hardware revision
 
-Put together BOM of parts not available from Mouser/Digikey
+* Put together BOM of parts not available from Mouser/Digikey
 
 * Figure out what I am forgetting to add to TO-DO
 
