@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name ChargeBoost2)(type Legacy)(uri ${KIPRJMOD}/ChargeBoost2.lib)(options "")(descr ""))
-)

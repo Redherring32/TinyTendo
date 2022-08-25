@@ -1,5 +1,0 @@
-(sym_lib_table
-  (lib (name TinyTendo-rescue)(type Legacy)(uri K:/Users/Redherring32/Desktop/TinyTendo/TinyTendo-rescue.lib)(options "")(descr ""))
-  (lib (name Cart_Slot-cache)(type Legacy)(uri "K:/Users/Redherring32/Desktop/TinyTendo/Cart Slot/Cart Slot-cache.lib")(options "")(descr ""))
-  (lib (name Motherboard)(type Legacy)(uri "K:/Users/Redherring32/Desktop/OpenTendo.git/trunk/Board Files/Motherboard.lib")(options "")(descr ""))
-)

@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name Button-PCB-rescue)(type Legacy)(uri "${KIPRJMOD}/Button PCB-rescue.lib")(options "")(descr ""))
-)
