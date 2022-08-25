@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name TinyTendo)(type Legacy)(uri C:/Users/Redherring32/Documents/TinyTendo.git/trunk/Hardware/Motherboard/TinyTendo.lib)(options "")(descr ""))
+  (lib (name Motherboard)(type Legacy)(uri "C:/Users/Redherring32/Desktop/OpenTendo.git/trunk/Board Files/Motherboard.lib")(options "")(descr ""))
+  (lib (name CPU-Test-rescue)(type Legacy)(uri ${KIPRJMOD}/CPU-Test-rescue.lib)(options "")(descr ""))
+)

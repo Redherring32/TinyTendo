@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name NESRE)(type KiCad)(uri "K:/Users/Redherring32/Desktop/OpenTendo.git/trunk/Component Footprints/NESRE.pretty")(options "")(descr ""))
+  (lib (name TinyTendo)(type KiCad)(uri K:/Users/Redherring32/Desktop/TinyTendo/TinyTendo.pretty)(options "")(descr ""))
+)

@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name ChargeBoost)(type KiCad)(uri ${KIPRJMOD}/ChargeBoost.pretty)(options "")(descr ""))
+)

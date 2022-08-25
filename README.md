@@ -46,7 +46,7 @@ the TAPR Open Hardware License (www.tapr.org/OHL)
 All hardware contained within this repository was designed by me except the Brightness mod PCB.
 The brightness mod PCB was designed by YveltalGriffin, and has been licensed under TAPR OHL with permission from the author.
 The brightness PCB was designed using Eagle, all other hardware was designed using KiCAD.
-The Brightness software was written by YveltalGriffin, and has been licensed under MIT with permission from the author.
+The Brightness software was written by YveltalGriffin, and has been licensed under MIT with permission from the author, see LICENSE in software folder for details.
 ## Credits
 
 In no particular order:
