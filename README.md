@@ -3,7 +3,7 @@ An open-source Gameboy sized handheld NES using real hardware
 
 ## DISCLAIMER:
 
-TinyTendo is a complex project that has taken a ton of effort, and despite now being open source should still be considered somewhat experimental, should you find anything that sin't quite right, please file an issue.
+TinyTendo is a complex project that has taken a ton of effort, and despite now being open source should still be considered somewhat experimental, should you find anything that isn't quite right, please file an issue.
 
 Additionally, TinyTendo requires physically cutting and grinding ORIGINAL NES chips down smaller, this is a difficult, tedious, and risky process. 
 
