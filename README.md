@@ -38,8 +38,6 @@ And finally, I am NOT an EE, if you are at all disgusted by any aspect of the PC
 
 * Update readme image to reflect current hardware revision
 
-* Put together BOM of parts not available from Mouser/Digikey
-
 * Figure out what I am forgetting to add to TO-DO
 
 ## License:
@@ -56,6 +54,8 @@ The Brightness software was written by YveltalGriffin, and has been licensed und
 ## Credits
 
 In no particular order:
+
+*FenrisWolfRetro* -Creating the wiring diagram in the Hardware folder.
 
 *YveltalGriffin* -Designed the brightness mod PCB, and wrote the code for it, and was just a tremendous help.
 
