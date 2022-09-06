@@ -1,4 +1,5 @@
 (fp_lib_table
   (lib (name NESRE)(type KiCad)(uri "K:/Users/Redherring32/Desktop/OpenTendo.git/trunk/Component Footprints/NESRE.pretty")(options "")(descr ""))
   (lib (name SamacSys_Parts)(type KiCad)(uri K:/Users/Redherring32/Desktop/TinyTendo/SamacSys_Parts.pretty)(options "")(descr ""))
+  (lib (name TinyTendo)(type KiCad)(uri C:/Users/Redherring32/Pictures/TinyTendo.git/trunk/Hardware/Motherboard/TinyTendo.pretty)(options "")(descr ""))
 )
