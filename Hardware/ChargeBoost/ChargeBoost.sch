@@ -103,10 +103,10 @@ F 3 "~" H 6600 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small THERM1
+L Device:R_Small R5
 U 1 1 611DC1B1
 P 7100 4600
-F 0 "THERM1" H 7159 4646 50  0000 L CNN
+F 0 "R5" H 7159 4646 50  0000 L CNN
 F 1 "15K" H 7159 4555 50  0000 L CNN
 F 2 "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" H 7100 4600 50  0001 C CNN
 F 3 "~" H 7100 4600 50  0001 C CNN
@@ -175,8 +175,6 @@ Connection ~ 7850 3600
 Wire Wire Line
 	7850 3600 7850 3700
 Wire Wire Line
-	7200 3400 7200 3150
-Wire Wire Line
 	2300 2300 2300 2100
 Wire Wire Line
 	7900 4700 7800 4700
@@ -209,8 +207,6 @@ Wire Wire Line
 Connection ~ 7200 3900
 Wire Wire Line
 	7850 3150 7850 3300
-Wire Wire Line
-	7200 3150 7850 3150
 Connection ~ 7850 3300
 Wire Wire Line
 	7700 3650 7700 3800
@@ -317,8 +313,8 @@ $Comp
 L Device:C_Small C2
 U 1 1 61240A01
 P 3350 4450
-F 0 "C2" H 3442 4496 50  0000 L CNN
-F 1 "10uF" H 3442 4405 50  0000 L CNN
+F 0 "C2" H 3100 4500 50  0000 L CNN
+F 1 "10uF" H 3050 4400 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3350 4450 50  0001 C CNN
 F 3 "~" H 3350 4450 50  0001 C CNN
 	1    3350 4450
@@ -376,9 +372,6 @@ Wire Wire Line
 	5400 4000 5900 4000
 Wire Wire Line
 	5400 4350 5400 4400
-Wire Wire Line
-	5400 4800 5050 4800
-Connection ~ 5050 4800
 Wire Wire Line
 	3350 4200 3350 4350
 Connection ~ 3350 4200
@@ -442,8 +435,6 @@ Wire Wire Line
 	3550 4050 3350 4050
 Wire Wire Line
 	3350 4050 3350 4200
-Wire Wire Line
-	3350 4200 3750 4200
 $Comp
 L Device:C_Small C5
 U 1 1 612C4974
@@ -483,22 +474,15 @@ Wire Wire Line
 	5250 4400 5400 4400
 Connection ~ 5400 4400
 Wire Wire Line
-	5400 4400 5400 4800
-Wire Wire Line
 	5400 4400 5550 4400
 Wire Wire Line
 	5550 4400 5550 4350
 Wire Wire Line
-	3350 5050 5400 5050
-Wire Wire Line
-	5400 5050 5400 4800
+	3350 5050 5050 5050
 Wire Wire Line
 	3350 4550 3350 5050
-Connection ~ 5400 4800
 Wire Wire Line
 	4400 4800 3650 4800
-Wire Wire Line
-	3650 4800 3650 4350
 Text Label 5400 5250 1    50   ~ 0
 GND
 Wire Wire Line
@@ -563,9 +547,6 @@ $EndComp
 Connection ~ 2100 1400
 Text Label 7200 2900 3    50   ~ 0
 VBUS
-Wire Wire Line
-	7200 2900 7200 3150
-Connection ~ 7200 3150
 $Comp
 L USB4125-GF-A_REVA2:USB4125-GF-A_REVA2 J1
 U 1 1 6132A325
@@ -612,44 +593,94 @@ Wire Wire Line
 	1600 2300 1800 2300
 Connection ~ 1600 2400
 Connection ~ 1800 2300
-Wire Wire Line
-	4950 4000 5200 4000
-$Comp
-L Device:R_Small R5
-U 1 1 61C6BA3A
-P 5200 3700
-F 0 "R5" H 5259 3746 50  0000 L CNN
-F 1 "R_Small" H 5259 3655 50  0000 L CNN
-F 2 "" H 5200 3700 50  0001 C CNN
-F 3 "~" H 5200 3700 50  0001 C CNN
-	1    5200 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R10
-U 1 1 61C6CF13
-P 5200 3900
-F 0 "R10" H 5259 3946 50  0000 L CNN
-F 1 "R_Small" H 5259 3855 50  0000 L CNN
-F 2 "" H 5200 3900 50  0001 C CNN
-F 3 "~" H 5200 3900 50  0001 C CNN
-	1    5200 3900
-	1    0    0    -1  
-$EndComp
-Connection ~ 5200 4000
-Wire Wire Line
-	5200 4000 5400 4000
-Wire Wire Line
-	5200 3800 5050 3800
-Wire Wire Line
-	5050 3800 5050 3900
-Wire Wire Line
-	5050 3900 4950 3900
-Connection ~ 5200 3800
-Text Label 5200 3600 1    50   ~ 0
-GND
 Text Label 10100 3500 1    50   ~ 0
 GND
 Wire Wire Line
 	10100 3500 10100 3100
+$Comp
+L Device:R_Small R10
+U 1 1 631F66E5
+P 3500 4700
+F 0 "R10" H 3450 4500 50  0000 L CNN
+F 1 "200R" H 3450 4400 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 3500 4700 50  0001 C CNN
+F 3 "~" H 3500 4700 50  0001 C CNN
+	1    3500 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 4000 5200 4000
+Wire Wire Line
+	5200 3900 5200 4000
+Wire Wire Line
+	4950 3900 5200 3900
+Connection ~ 5200 4000
+Wire Wire Line
+	5200 4000 5400 4000
+Wire Wire Line
+	5400 4400 5400 5050
+Wire Wire Line
+	5050 4800 5050 5050
+Connection ~ 5050 4800
+Connection ~ 5050 5050
+Wire Wire Line
+	5050 5050 5400 5050
+$Comp
+L Device:C_Small C7
+U 1 1 63200325
+P 2050 6350
+F 0 "C7" V 1821 6350 50  0000 C CNN
+F 1 "1uF" V 1912 6350 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2050 6350 50  0001 C CNN
+F 3 "~" H 2050 6350 50  0001 C CNN
+	1    2050 6350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1950 6350 1850 6350
+Wire Wire Line
+	1850 6350 1850 6150
+Connection ~ 1850 6150
+Wire Wire Line
+	2150 6350 2250 6350
+Wire Wire Line
+	2250 6350 2250 6150
+Connection ~ 2250 6150
+Wire Wire Line
+	3350 4200 3500 4200
+Wire Wire Line
+	3650 4350 3650 4800
+Wire Wire Line
+	3500 4600 3500 4200
+Connection ~ 3500 4200
+Wire Wire Line
+	3500 4200 3750 4200
+Wire Wire Line
+	3500 4800 3650 4800
+Connection ~ 3650 4800
+$Comp
+L Device:C_Small C7
+U 1 1 632A491E
+P 7550 3250
+F 0 "C7" H 7642 3296 50  0000 L CNN
+F 1 "10uF" H 7642 3205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7550 3250 50  0001 C CNN
+F 3 "~" H 7550 3250 50  0001 C CNN
+	1    7550 3250
+	1    0    0    -1  
+$EndComp
+Text Label 7550 3600 1    50   ~ 0
+GND
+Wire Wire Line
+	7550 3350 7550 3600
+Wire Wire Line
+	7200 2900 7200 3150
+Wire Wire Line
+	7550 3150 7850 3150
+Wire Wire Line
+	7550 3150 7200 3150
+Connection ~ 7550 3150
+Connection ~ 7200 3150
+Wire Wire Line
+	7200 3150 7200 3400
 $EndSCHEMATC
