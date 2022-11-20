@@ -109,8 +109,6 @@ Text Label 3250 7900 1    50   ~ 0
 GND
 Text Label 3250 7000 3    50   ~ 0
 VCC
-Text Notes 1450 6600 0    50   ~ 10
-FILTER CAPACITORS
 Wire Wire Line
 	1450 1850 5050 1850
 Wire Wire Line
@@ -1223,48 +1221,6 @@ NoConn ~ 12000 3000
 NoConn ~ 12000 3100
 NoConn ~ 12000 3200
 NoConn ~ 12000 3300
-Text Notes 4250 5100 2    50   ~ 10
-SYSTEM CLOCK
-Text Label 4000 6350 1    50   ~ 0
-GND
-$Comp
-L Oscillator:SG-8002LB X1
-U 1 1 61EB8367
-P 4000 5850
-F 0 "X1" H 4250 6250 50  0000 L CNN
-F 1 "SG-8018CG-TJHPAB" H 3600 6800 50  0000 L CNN
-F 2 "TinyTendo:Oscillator" H 4700 5500 50  0001 C CNN
-F 3 "" H 3900 5850 50  0001 C CNN
-	1    4000 5850
-	1    0    0    -1  
-$EndComp
-Text Label 4000 5300 3    50   ~ 0
-3V3
-Wire Wire Line
-	4000 5300 4000 5500
-Wire Wire Line
-	4000 6350 4000 6150
-Wire Wire Line
-	3700 5850 3600 5850
-Wire Wire Line
-	3600 5850 3600 5500
-Wire Wire Line
-	3600 5500 4000 5500
-Connection ~ 4000 5500
-Wire Wire Line
-	4000 5500 4000 5550
-Connection ~ 3600 5850
-Wire Wire Line
-	3600 6050 3600 6150
-Wire Wire Line
-	3600 6150 4000 6150
-Connection ~ 4000 6150
-Text Label 4650 5850 2    50   ~ 0
-SYS-CLK
-Wire Wire Line
-	4650 5850 4300 5850
-Text Notes 4100 5600 0    50   ~ 0
-21.4773MHz\n
 Text Label 11000 6100 2    50   ~ 0
 GND
 Wire Wire Line
@@ -1362,17 +1318,6 @@ $EndComp
 Wire Wire Line
 	5950 3750 6100 3750
 Connection ~ 6100 3750
-$Comp
-L Device:C_Small C6
-U 1 1 61E6F0CF
-P 3600 5950
-F 0 "C6" H 3350 6000 50  0000 L CNN
-F 1 "0.1uF" H 3300 5900 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 3600 5950 50  0001 C CNN
-F 3 "~" H 3600 5950 50  0001 C CNN
-	1    3600 5950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9750 5700 9300 5700
 Text Label 9300 5700 0    50   ~ 0
@@ -1385,28 +1330,6 @@ Text Label 9300 5800 0    50   ~ 0
 GND
 Wire Wire Line
 	9750 5800 9300 5800
-$Comp
-L Connector:Conn_01x01_Male J1
-U 1 1 621FC48C
-P 4000 5100
-F 0 "J1" V 4062 5144 50  0000 L CNN
-F 1 "Conn_01x01_Male" V 4153 5144 50  0001 L CNN
-F 2 "TinyTendo:SolderPad" H 4000 5100 50  0001 C CNN
-F 3 "~" H 4000 5100 50  0001 C CNN
-	1    4000 5100
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:Conn_01x01_Male J2
-U 1 1 621FE568
-P 4000 6550
-F 0 "J2" V 4062 6594 50  0000 L CNN
-F 1 "Conn_01x01_Male" V 4153 6594 50  0001 L CNN
-F 2 "TinyTendo:SolderPad" H 4000 6550 50  0001 C CNN
-F 3 "~" H 4000 6550 50  0001 C CNN
-	1    4000 6550
-	0    -1   -1   0   
-$EndComp
 NoConn ~ 6750 2150
 $Comp
 L Device:C_Small C4
@@ -1587,4 +1510,98 @@ Wire Wire Line
 	3600 3700 3900 3700
 Text Label 3900 3700 2    50   ~ 0
 AUDIO
+Text Notes 3650 5000 2    50   ~ 10
+SYSTEM CLOCK
+Text Notes 3100 5100 0    50   ~ 0
+21.47727MHz\n
+$Comp
+L Connector:Conn_01x01_Male J1
+U 1 1 621FC48C
+P 3400 5200
+F 0 "J1" V 3462 5244 50  0000 L CNN
+F 1 "Conn_01x01_Male" V 3553 5244 50  0001 L CNN
+F 2 "TinyTendo:SolderPad" H 3400 5200 50  0001 C CNN
+F 3 "~" H 3400 5200 50  0001 C CNN
+	1    3400 5200
+	0    1    1    0   
+$EndComp
+Text Notes 1450 6600 0    50   ~ 10
+FILTER CAPACITORS
+Connection ~ 3700 5550
+Wire Wire Line
+	3700 5550 3900 5550
+Connection ~ 3400 5550
+Wire Wire Line
+	3700 5550 3700 5750
+Wire Wire Line
+	3700 5550 3400 5550
+Wire Wire Line
+	3400 5400 3400 5550
+Wire Wire Line
+	3700 6200 3700 5950
+Wire Wire Line
+	3400 6200 3400 6150
+Wire Wire Line
+	3400 6200 3700 6200
+Connection ~ 3100 6300
+Wire Wire Line
+	3900 6300 3100 6300
+Wire Wire Line
+	3900 5950 3900 6300
+Wire Wire Line
+	3100 6150 3100 6300
+Text Label 3400 5400 3    50   ~ 0
+3V3
+$Comp
+L Device:R_Small R8
+U 1 1 638B75BB
+P 3700 5850
+F 0 "R8" H 3759 5896 50  0000 L CNN
+F 1 "1K" H 3759 5805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3700 5850 50  0001 C CNN
+F 3 "~" H 3700 5850 50  0001 C CNN
+	1    3700 5850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3900 5750 3900 5550
+$Comp
+L TinyTendo:SiT2001B X1
+U 1 1 637C4F59
+P 3250 6000
+F 0 "X1" H 3528 5896 50  0000 L CNN
+F 1 "SiT2001B" H 3528 5805 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 3250 6000 50  0001 C CNN
+F 3 "" H 3250 6000 50  0001 C CNN
+	1    3250 6000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J2
+U 1 1 621FE568
+P 3100 6500
+F 0 "J2" V 3162 6544 50  0000 L CNN
+F 1 "Conn_01x01_Male" V 3253 6544 50  0001 L CNN
+F 2 "TinyTendo:SolderPad" H 3100 6500 50  0001 C CNN
+F 3 "~" H 3100 6500 50  0001 C CNN
+	1    3100 6500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C6
+U 1 1 61E6F0CF
+P 3900 5850
+F 0 "C6" H 3650 5900 50  0000 L CNN
+F 1 "0.1uF" H 3600 5800 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3900 5850 50  0001 C CNN
+F 3 "~" H 3900 5850 50  0001 C CNN
+	1    3900 5850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3100 5200 3100 5550
+Text Label 3100 5200 3    50   ~ 0
+SYS-CLK
+Text Label 3100 6300 1    50   ~ 0
+GND
 $EndSCHEMATC
